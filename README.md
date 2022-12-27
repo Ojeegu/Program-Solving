@@ -4,12 +4,12 @@
 * 파일명 : 사이트폴더명_챕터_문제번호 or 사이트폴더명_문제제목
 * 커밋메세지
 * 제목 : feat: Add file 파일명
- * Example)
+    * Example)
 ```
     feat: Add file Inf_Section05_Q7.java
 ```
 * 본문 : 파일명, 작성일자, 문제, 키워드, 후기를 포함하여 작성
- * Example)
+    * Example)
 ```
     -파일명 : Inf_Section05_Q7.java
     -작성일자 : 2022.12.27
