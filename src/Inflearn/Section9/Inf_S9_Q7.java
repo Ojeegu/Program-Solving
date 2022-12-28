@@ -15,7 +15,7 @@ class Edge implements Comparable<Edge> {
     @Override
     public int compareTo(Edge obj) { //유지비용을 기준으로 오름차순 정렬하도록 오버라이딩
         return this.cost - obj.cost;
-    }
+    } //cost를 기준으로 오름차순 정렬
 }
 
 public class Inf_S9_Q7 { //원더랜드(최소 스패닝 트리, 크루스칼)
