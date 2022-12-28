@@ -6,12 +6,12 @@
 * 제목 : feat: Add file 파일명
     * Example)
    ```
-      feat: Add file Inf_Section05_Q7.java
+      feat: Add file Inf_S5_Q7.java
    ```
 * 본문 : 파일명, 작성일자, 문제, 키워드, 후기를 포함하여 작성
     * Example)
    ```
-      -파일명 : Inf_Section05_Q7.java
+      -파일명 : Inf_S5_Q7.java
       -작성일자 : 2022.12.27
       -문제 : 인프런 섹션 5 스택,큐 자료구조
               문제 7번 교육과정설계
