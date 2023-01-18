@@ -1,8 +1,8 @@
-package DoItJava.Chapter3;
+package DoItJava.Chapter4;
 
 import java.util.Scanner;
 
-public class Doit_C3_Q17 { //소트인사이드(선택정렬)
+public class Doit_C4_Q17 { //소트인사이드(선택정렬)
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
