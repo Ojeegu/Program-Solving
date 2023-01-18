@@ -1,11 +1,11 @@
-package DoItJava.Chapter3;
+package DoItJava.Chapter4;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-public class Doit_C3_Q16 { //버블 소트 프로그램
+public class Doit_C4_Q16 { //버블 소트 프로그램
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
