@@ -1,10 +1,10 @@
-package DoItJava.Chapter3;
+package DoItJava.Chapter4;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Doit_C3_Q15 { //수 정렬하기1(버블정렬)
+public class Doit_C4_Q15 { //수 정렬하기1(버블정렬)
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
