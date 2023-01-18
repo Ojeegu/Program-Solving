@@ -5,9 +5,9 @@ public class Main {
     public void mergeSort(int start, int end) { //머지소트(정렬) 메서드
         int mid = start + (end - start) / 2;// (start+end)/2로 해도 되지만 overflow 방지차원으로 이렇게 씀
         if(start < end) {
-          mergeSort(start, mid); //배열의 오른쪽 부분 재귀함수
-          mergeSort(mid + 1, end); //배열의 왼쪽 부분 재귀함수
-          }
+            mergeSort(start, mid); //배열의 오른쪽 부분 재귀함수
+            mergeSort(mid + 1, end); //배열의 왼쪽 부분 재귀함수
+        }
         for(int i = start; i <= end; i++) {
             tmp[i] = arr[i];
         }
@@ -30,11 +30,6 @@ public class Main {
             arr[index] = tmp[part1];
             index++;
             part1++;
-        }
-        while(part2 <= end) {
-            arr[index] = tmp[part2];
-            index++;
-            part2++;
         }
     }
 
