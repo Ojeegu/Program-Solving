@@ -7,6 +7,7 @@ import java.util.StringTokenizer;
 public class Main { //수 찾기
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder sb = new StringBuilder();
         StringTokenizer st;
         int n = Integer.parseInt(br.readLine()); //정수 개수 입력
         int[] arr = new int[n];
@@ -39,8 +40,9 @@ public class Main { //수 찾기
                     break;
                 }
             }
-            if(flag) System.out.println(1);
-            else System.out.println(0);
+            if(flag) sb.append(1 + "\n");
+            else sb.append(0 + "\n");
         }
+        System.out.println(sb);
     }
 }
