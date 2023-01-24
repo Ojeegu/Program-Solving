@@ -8,9 +8,8 @@ public class Main { //배열에서 K번째 수 찾기
 
         int start = 1; //문제에서 인덱스가 1부터 시작한다는 조건이 있으므로
         int end = k; // 임의의 값 x는 k보다 작거나 같으므로
-        int answer = 0; //임의의 값 x
 
-        while(start <= end) {
+        while(start < end) {
             int mid = (start + end) / 2;
             int count = 0; //임의의 값 x보다 작거나 같은 수의 개수
             for(int i = 1; i < n+1; i++) {
@@ -20,10 +19,9 @@ public class Main { //배열에서 K번째 수 찾기
                 start = mid + 1;
             }
             else { //임의의 값 x보다 작거나 같은 수의 개수가 최소 k개일 때
-                answer = mid;
-                end = mid - 1;
+                end = mid;
             }
         }
-        System.out.println(answer);
+        System.out.println(end);
     }
 }
