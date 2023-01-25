@@ -35,13 +35,13 @@ public class Main { //친구 관계 파악하기
     }
 
     static void DFS(int v, int count) {
-        if (count == 5 || isValid) {
+        if (count == 5) {
             isValid = true;
             return;
         }
         visited[v] = true;
         for (int u : list.get(v)) {
-            if(!visited[u]) {
+            if(!visited[u]) { //u가 이미 방문한 곳이라면 count가 늘어나지 않음
                 DFS(u, count + 1);
             }
         }
