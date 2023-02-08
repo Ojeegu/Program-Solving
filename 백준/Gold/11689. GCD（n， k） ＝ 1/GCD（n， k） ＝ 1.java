@@ -10,12 +10,12 @@ public class Main { //오일러의 피
         for(long i = 2; i <= Math.sqrt(n); i++) { //에라토리스의 체 활용
             if(n % i == 0) { //i가 n의 약수면
                 euler = euler - (euler / i); //오일러 공식
-            }
-            while(n % i == 0) {
-                n = n / i; //약수로 나눠줌
+                while(n % i == 0) {
+                    n /= i; //약수로 나눠줌
+                }
             }
         }
-        if(n != 1) { //1 외에 나눌 수 있는 수가 더 있는 경우
+        if(n > 1) { //1 외에 나눌 수 있는 수가 더 있는 경우
             euler = euler - (euler / n); //한번 더 오일러 공식
         }
         System.out.println(euler);
