@@ -10,6 +10,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
+        StringBuffer sb = new StringBuffer();
         int n = Integer.parseInt(st.nextToken()); //컴퓨터 개수
         int m = Integer.parseInt(st.nextToken()); //신뢰관계 수
 
@@ -38,9 +39,10 @@ public class Main {
         }
         for(int i = 1; i < n+1; i++) {
             if(answer[i] == max) {
-                System.out.print(i + " ");
+                sb.append(i+ " ");
             }
         }
+        System.out.println(sb);
     }
 
     private static void BFS(int comIndex) {
